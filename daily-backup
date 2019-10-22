@@ -1,0 +1,4 @@
+set date=%date:/=%
+net use x: \\server\drive_to_map$ /user:domain\user password 
+ROBOCOPY x:\source_folder\%date%\ F:\destination_folder\ /E
+net use x: /delete
